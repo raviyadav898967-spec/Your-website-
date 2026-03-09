@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surprise</title>
+<style>
+body{
+background:black;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+font-size:30px;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+😎 Website ban gayi!  
+</div>
+
+<script>
+window.onload = function(){
+let msg = new SpeechSynthesisUtterance(
+"Le sale, bana di website. Halke mein le raha tha kya!"
+);
+msg.lang = "hi-IN";
+speechSynthesis.speak(msg);
+}
+</script>
+
+</body>
+</html>
